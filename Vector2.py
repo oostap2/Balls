@@ -6,10 +6,6 @@ class Vector2():
         self.x = x
         self.y = y
 
-    def randpos(self, window_size : tuple[int, int] = (500, 500)):
-        self.x = randint(0, window_size[0])
-        self.y = randint(0, window_size[1])
-
     def __mul__(self, other):
         if isinstance(other, Vector2):
             return Vector2(self.x * other.x, self.y * other.y)
